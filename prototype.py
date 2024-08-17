@@ -50,8 +50,9 @@ class Question:
 class Student:
     def __init__(self, name):
         self.name = name
-        self.answers = []  # List to store the student's answers# Method to save the student's answer for a particular question
-    
+        self.answers = []  # List to store the student's answers
+        
+    # Method to save the student's answer for a particular question    
     def save_answer(self, question, answer):
         self.answers.append((question, answer))
 
