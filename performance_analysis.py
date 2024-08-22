@@ -1,7 +1,7 @@
 class PerformanceAnalysis:
-    def __init__(self, student:object, reviewer):
+    def __init__(self, student:object, generated_questions):
         self.student = student
-        self.reviewer = reviewer
+        self.generated_questions = generated_questions
 
  # Method to generate and return a performance report for the student
     def print_performance_report (self):
@@ -14,7 +14,7 @@ class PerformanceAnalysis:
         if x == "Y":
             print("----------------EXAM REVIEWER----------------")
             y = 0
-            for i, question in enumerate(self.reviewer, start=1):
+            for i, question in enumerate(self.generated_questions, start=1):
                 print(f"\nQuestion {i}:\n")
                 question.display_question()
                 print("")
@@ -29,7 +29,7 @@ class PerformanceAnalysis:
             raise SystemExit
 
         else:
-            print("invalid input")
+            print("Invalid Input")
 
             self.exam_review()
 
