@@ -38,7 +38,7 @@ class TrueFalseQuestion(Question):
     Method to display the question and the true/false options    
     """
     def display_question(self):
-        print(f"Question: {self.question_text}")
+        print(f"{self.question_text}")
         for option in self.__options:
             print(option)
 
@@ -55,6 +55,6 @@ class MultipleChoiceQuestion(Question):
     Method to display the question and all the options    
     """
     def display_question(self):
-        print(f"Question: {self.question_text}")
+        print(f"{self.question_text}")
         for option in self.__options:
             print(option)

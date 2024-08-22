@@ -73,48 +73,55 @@ questions_filipino = [
         "question_text": "Piliin ang tamang panghalip panao na gagamitin sa pangungusap: 'Nakilala ko si Juan at ______ ay mabait.'",
         "options": ["ako", "siya", "kami", "sila"],
         "correct_answer": "siya"
-    }
-]
-
-questions_tama_mali = [
+    },
     {
         "question_text": "Ang 'ng' ay ginagamit bilang panghalili sa salitang 'na' kapag sinusundan ito ng pang-uri.",
+        "options": ["Tama", "Mali"],
         "correct_answer": "Mali"
     },
     {
         "question_text": "Ang 'nang' ay ginagamit upang ipakita ang dahilan o paraan ng isang kilos.",
+        "options": ["Tama", "Mali"],
         "correct_answer": "Tama"
     },
     {
         "question_text": "Ang 'mayroon' ay ginagamit kapag ang salitang sinusundan ay isang pangngalan o panghalip.",
+        "options": ["Tama", "Mali"],
         "correct_answer": "Tama"
     },
     {
         "question_text": "Ang tamang gamit ng 'raw' at 'rin' ay depende sa tunog ng huling letra ng salitang sinusundan nito.",
+        "options": ["Tama", "Mali"],
         "correct_answer": "Tama"
     },
     {
         "question_text": "Ang 'ng' ay ginagamit bilang pang-ukol sa mga pangalan ng lugar o tao.",
+        "options": ["Tama", "Mali"],
         "correct_answer": "Mali"
     },
     {
         "question_text": "Ang pang-abay na 'nang' ay ginagamit upang tukuyin ang pandiwang inuulit.",
+        "options": ["Tama", "Mali"],
         "correct_answer": "Tama"
     },
     {
         "question_text": "Ang 'dahil' at 'kasi' ay pareho lamang ang gamit sa pangungusap.",
+        "options": ["Tama", "Mali"],
         "correct_answer": "Mali"
     },
     {
         "question_text": "Sa Filipino, ang panghalip na 'kami' ay ginagamit kapag kasama ang kausap sa binabanggit na grupo.",
+        "options": ["Tama", "Mali"],
         "correct_answer": "Mali"
     },
     {
         "question_text": "Ang 'pero' ay isang halimbawa ng pangatnig na ginagamit sa pagsasalungat ng dalawang ideya.",
+        "options": ["Tama", "Mali"],
         "correct_answer": "Tama"
     },
     {
         "question_text": "Ang tamang gamit ng 'may' ay kapag sinusundan ito ng pangngalan o pandiwa.",
+        "options": ["Tama", "Mali"],
         "correct_answer": "Tama"
     }
 ]

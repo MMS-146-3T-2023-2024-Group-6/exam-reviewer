@@ -1,15 +1,20 @@
 from student import Student
 from examreviewer import ExamReviewer
-from questions_math import questions_math
+from questionbank import question_bank
 
 # Main program loop
 def main():
-    # Initialize ExamReviewer with the question bank
-    reviewer = ExamReviewer(questions_math)
+
     
     # Prompt the user for their name and create a new student instance
     student_name = input("Enter your name: ")
     student = Student(student_name)
+
+    # Prompt the user to choose a subject
+    subject = input("Choose a subject: \n Math \n Filipino \n \n")
+
+    # Initialize ExamReviewer with the question bank depending on subject
+    reviewer = ExamReviewer(question_bank(subject))
     
     # Generate random questions for the review session
     questions = reviewer.generate_random_questions()
