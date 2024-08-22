@@ -26,7 +26,7 @@ class ExamReviewer:
             # Create a Question object and add it to the list
             if len(options) == 2:
                 # If there are 2 options, create a TrueFalseQuestion object
-                question = TrueFalseQuestion(question_text, correct_answer)
+                question = TrueFalseQuestion(question_text, options, correct_answer)
             else:
                 # Otherwise, create a MultipleChoiceQuestion object
                 question = MultipleChoiceQuestion(question_text, options, correct_answer)
@@ -34,10 +34,6 @@ class ExamReviewer:
         
         # Return the list of Question objects
         return questions
-
-    # Placeholder method for customizing the review session (not implemented here)
-    def customize_session(self):
-        pass
     
     # Method to generate a performance report for the student
     def generate_report(self, student):

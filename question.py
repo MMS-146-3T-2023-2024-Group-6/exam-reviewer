@@ -22,9 +22,17 @@ class TrueFalseQuestion(Question):
     Initiate a True/False Question
     options: an array with True and False
     """
-    def __init__(self, question_text, correct_answer):
+    def __init__(self, question_text, options, correct_answer):
         super().__init__(question_text, correct_answer)
-        self.__options = ["True", "False"]          # Private attribute
+        """
+        If the question provides different options aside from True/False, use those.
+        Otherwise use True/False
+
+        """
+        if options != ["True", "False"]:
+            self.__options = options        
+        else:
+            self.__options = ["True, False"]
 
     """
     Method to display the question and the true/false options    

@@ -4,6 +4,7 @@ from questions_math import questions_math
 # Question Bank method goes here
 
 def question_bank(subject):
+    # This returns the subject dictionary depending on what is chosen.
     match subject:
         case "Filipino":
             return questions_filipino
