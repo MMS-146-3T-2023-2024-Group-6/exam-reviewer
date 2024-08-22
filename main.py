@@ -1,6 +1,7 @@
 from student import Student
 from examreviewer import ExamReviewer
 from questionbank import question_bank
+from performance_analysis import PerformanceAnalysis
 
 # Main program loop
 def main():
@@ -27,8 +28,9 @@ def main():
         student.save_answer(question, answer)
 
     # Generate and display the performance report
-    report = reviewer.generate_report(student)
-    print("\n" + report)
+    perf_analysis_test = PerformanceAnalysis(student,questions)
+    perf_analysis_test.print_performance_report()
+    perf_analysis_test.exam_review()
 
 
 # Run the program
