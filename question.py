@@ -17,6 +17,9 @@ class Question:
     def check_answer(self, user_answer):
         return user_answer == self.__correct_answer
 
+    def get_correct_answer(self): #added method for perf analysis
+        return self.__correct_answer
+
 class TrueFalseQuestion(Question):
     """
     Initiate a True/False Question
