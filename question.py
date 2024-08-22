@@ -8,7 +8,7 @@ class Question:
     correct_answer: The designated correct answer
     """
     def __init__(self, question_text, correct_answer):
-        self.__question_text = question_text        # Private attribute
+        self.question_text = question_text        # Private attribute
         self.__correct_answer = correct_answer      # Private attribute
     
     """
@@ -30,7 +30,7 @@ class TrueFalseQuestion(Question):
     Method to display the question and the true/false options    
     """
     def display_question(self):
-        print(f"Question: {self.__question_text}")
+        print(f"Question: {self.question_text}")
         for option in self.__options:
             print(option)
 
@@ -47,6 +47,6 @@ class MultipleChoiceQuestion(Question):
     Method to display the question and all the options    
     """
     def display_question(self):
-        print(f"Question: {self.__question_text}")
+        print(f"Question: {self.question_text}")
         for option in self.__options:
             print(option)
