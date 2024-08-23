@@ -1,5 +1,5 @@
 from student import Student
-from examreviewer import ExamReviewer
+from examreviewer import ExamReviewer, PerformanceAnalysis
 from questionbank import question_bank
 from performance_analysis import PerformanceAnalysis
 import time
