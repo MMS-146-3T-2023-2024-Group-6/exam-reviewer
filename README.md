@@ -8,12 +8,12 @@ This program is (will continue once the code is finalize, the features will be d
 
 ## Members
 
-Alcano, Joinne Sherry Mae M.
-Abbu, Iad Radley Adrienne C.
-Doctor, Joel P.
-Cabling, Mark John Paul A.
-Barboza, Gabriel Rodolfo M.
-Dayo, Alexandra Margarette B.
-Macaraig, John Dane R
-Pidlaoan, Aljey 
+Alcano, Joinne Sherry Mae M.\n
+Abbu, Iad Radley Adrienne C.\n
+Doctor, Joel P.\n
+Cabling, Mark John Paul A.\n
+Barboza, Gabriel Rodolfo M.\n
+Dayo, Alexandra Margarette B.\n
+Macaraig, John Dane R\n
+Pidlaoan, Aljey \n
 
