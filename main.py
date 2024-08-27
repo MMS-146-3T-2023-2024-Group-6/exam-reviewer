@@ -12,18 +12,24 @@ def main():
 
     # Prompt the user to choose a subject
     while True:
-        subject = input("Choose a subject: \n Math \n Filipino \n Exit (exits program) \n\n")
-        if subject == "Math" or subject == "Filipino":
-            break
-        elif subject == "Exit":
-            print("Session Ended")
-            raise SystemExit
-        else:
-            print("Invalid Subject \n")
+        subject = input("Choose a subject: \n Math \n Filipino \n \n")
+        subject = subject.lower()  # case-insensitivity
+        result = question_bank(subject)
 
+        if result == "Subject not found":
+            print("No reviewer available. Please enter a valid subject.")
+        else:
+            break  # Exit the loop if a valid subject is found
 
     # Prompt the user to choose the number of questions
-    num_questions = int(input("Choose the number of questions (5, 10, 15): "))
+    while True:
+        try:
+            num_questions = int(input("Choose the number of questions (5, 10, 15): "))
+            if num_questions not in (5, 10, 15):
+                raise ValueError
+            break  # Exit the loop if a valid number of questions is entered
+        except ValueError:
+            print("Invalid number of questions. Please enter 5, 10, or 15.")
 
     # Initialize ExamReviewer with the question bank depending on subject
     reviewer = ExamReviewer(question_bank(subject))
@@ -54,22 +60,10 @@ def main():
     time_taken = f"{hours:02d}:{minutes:02d}:{seconds:02d}"
 
     # Generate and display the performance report, including time taken
-    while True:
-        x = input("Do you want to review the exam? Y/N \n").upper()
-        if x == "Y":
-            perf_analysis_test = PerformanceAnalysis(student, questions)
-            perf_analysis_test.print_performance_report(time_taken)
-            perf_analysis_test.create_exam_review()
-            ask_to_save = input("Would you like to save the report into a text file? Y/N \n").upper()
-            if ask_to_save == "Y":
-                perf_analysis_test.save_exam_review_to_file()
-            print("Session Ended")
-            raise SystemExit
-        elif x == "N":
-            print("Session Ended")
-            raise SystemExit
-        else:
-            print("Invalid Input")
+    perf_analysis_test = PerformanceAnalysis(student, questions)
+    perf_analysis_test.print_performance_report(time_taken)
+    perf_analysis_test.exam_review()
+
 
 # Run the program
 main()
