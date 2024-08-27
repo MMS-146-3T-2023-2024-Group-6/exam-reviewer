@@ -11,7 +11,16 @@ def main():
     student = Student(student_name)
 
     # Prompt the user to choose a subject
-    subject = input("Choose a subject: \n Math \n Filipino \n \n")
+    while True:
+        subject = input("Choose a subject: \n Math \n Filipino \n Exit (exits program) \n\n")
+        if subject == "Math" or subject == "Filipino":
+            break
+        elif subject == "Exit":
+            print("Session Ended")
+            raise SystemExit
+        else:
+            print("Invalid Subject \n")
+
 
     # Prompt the user to choose the number of questions
     num_questions = int(input("Choose the number of questions (5, 10, 15): "))
