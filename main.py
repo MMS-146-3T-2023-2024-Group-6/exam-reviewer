@@ -45,10 +45,18 @@ def main():
     time_taken = f"{hours:02d}:{minutes:02d}:{seconds:02d}"
 
     # Generate and display the performance report, including time taken
-    perf_analysis_test = PerformanceAnalysis(student, questions)
-    perf_analysis_test.print_performance_report(time_taken)
-    perf_analysis_test.exam_review()
-
+    while True:
+        x = input("Do you want to review or end session? Y/N \n").upper()
+        if x == "Y":
+            perf_analysis_test = PerformanceAnalysis(student, questions)
+            perf_analysis_test.print_performance_report(time_taken)
+            perf_analysis_test.create_exam_review()
+            raise SystemExit
+        elif x == "N":
+            print("Session Ended")
+            raise SystemExit
+        else:
+            print("Invalid Input")
 
 # Run the program
 main()
