@@ -46,11 +46,15 @@ def main():
 
     # Generate and display the performance report, including time taken
     while True:
-        x = input("Do you want to review or end session? Y/N \n").upper()
+        x = input("Do you want to review the exam? Y/N \n").upper()
         if x == "Y":
             perf_analysis_test = PerformanceAnalysis(student, questions)
             perf_analysis_test.print_performance_report(time_taken)
             perf_analysis_test.create_exam_review()
+            ask_to_save = input("Would you like to save the report into a text file? Y/N \n").upper()
+            if ask_to_save == "Y":
+                perf_analysis_test.save_exam_review_to_file()
+            print("Session Ended")
             raise SystemExit
         elif x == "N":
             print("Session Ended")

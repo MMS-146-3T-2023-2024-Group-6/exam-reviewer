@@ -33,16 +33,16 @@ class TrueFalseQuestion(Question):
 
         """
         if options != ["True", "False"]:
-            self.__options = options        
+            self.options = options        
         else:
-            self.__options = ["True, False"]
+            self.options = ["True, False"]
 
     """
     Method to display the question and the true/false options    
     """
     def display_question(self):
         print(f"{self.question_text}")
-        for option in self.__options:
+        for option in self.options:
             print(option)
 
 class MultipleChoiceQuestion(Question):
@@ -52,12 +52,12 @@ class MultipleChoiceQuestion(Question):
     """
     def __init__(self, question_text, options, correct_answer):
         super().__init__(question_text, correct_answer)
-        self.__options = options                    # Private attribute
+        self.options = options                    
     
     """
     Method to display the question and all the options    
     """
     def display_question(self):
         print(f"{self.question_text}")
-        for option in self.__options:
+        for option in self.options:
             print(option)

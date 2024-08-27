@@ -60,3 +60,22 @@ class PerformanceAnalysis:
             answers = [x[1] for x in self.student.answers]
             print("Your Answer:", answers[i - 1])  # Adjust index to match question number
             print("")
+    
+    def save_exam_review_to_file(self, file_name="exam_reviewer.txt"):
+        try:
+            with open(file_name,'w') as file:
+                file.write("----------------EXAM REVIEWER----------------\n")
+                for i, question in enumerate(self.generated_questions, start=1):
+                    file.write(f"\nQuestion {i}:\n")
+                    # Capture the output of display_question and write it to the file
+                    file.write(f"{question.question_text}\n")
+                    for option in question.options:
+                        file.write(f"{option}\n")
+                    file.write("\n")
+                    file.write("Correct Answer: " + question.get_correct_answer() + "\n")
+                    answers = [x[1] for x in self.student.answers]
+                    file.write("Your Answer: " + answers[i - 1] + "\n")
+                    file.write("\n")
+            print(f"All questions and answers have been saved to {file_name}")
+        except Exception as e:
+            print(f"An error occurred while saving questions to file: {e}")

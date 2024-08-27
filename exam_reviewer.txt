@@ -1,0 +1,48 @@
+----------------EXAM REVIEWER----------------
+
+Question 1:
+The evaluation of (1225^2 - 225^2) is 1,450,000.
+   True
+   False
+
+Correct Answer: True
+Your Answer: True
+
+
+Question 2:
+The expansion of (x-3)^4 results in (x^4 + 12x^3 - 54x^2 + 108x - 81).
+   True
+   False
+
+Correct Answer: True
+Your Answer: False
+
+
+Question 3:
+A total of 87 1x1x2 boxes can fit inside a 5x5x7 box.
+   True
+   False
+
+Correct Answer: True
+Your Answer: False
+
+
+Question 4:
+A pride of 7 lions can consume 2 elephant carcasses in 18 days. If two more lions join the pride and this time there are four elephant carcasses, how many days can the pride finish consuming the carcasses?
+   a. 12 days
+   b. 14 days
+   c. 28 days
+   d. 36 days
+
+Correct Answer: c
+Your Answer: a
+
+
+Question 5:
+Fabini gives jellybeans to his nephews in proportion to their ages, resulting in Peter receiving 12 jellybeans, Billy receiving 20 jellybeans, and Konrad receiving 28 jellybeans.
+   True
+   False
+
+Correct Answer: True
+Your Answer: True
+
