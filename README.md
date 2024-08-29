@@ -13,7 +13,6 @@ This program is a text-based exam reviewer system that is designed to assist stu
 * Iad Radley Adrienne C. Abu
 * Joel P. Doctor
 * Mark John Paul A. Cabling
-* Gabriel Rodolfo M. Barboza
 * Alexandra Margarette B. Dayo
 * John Dane R. Macaraig
 * Aljey Pidlaoan
